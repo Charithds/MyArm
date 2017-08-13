@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.charith.myarm.DeviceSelect">
+
+    <TextView
+        android:id="@+id/ipAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ipAddressEditText"
+        android:layout_alignBottom="@+id/ipAddressEditText"
+        android:layout_marginEnd="33dp"
+        android:layout_toStartOf="@+id/ipAddressEditText"
+        android:text="IP ADDRESS" />
+
+    <TextView
+        android:id="@+id/passwordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passwordEditText"
+        android:layout_alignBottom="@+id/passwordEditText"
+        android:layout_alignEnd="@+id/ipAddressTextView"
+        android:text="Port" />
+
+    <EditText
+        android:id="@+id/ipAddressEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/passwordEditText"
+        android:layout_alignStart="@+id/passwordEditText"
+        android:ems="10"
+        android:inputType="textUri" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/saveBtn"
+        android:layout_alignStart="@+id/saveBtn"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_alignBaseline="@+id/saveBtn"
+        android:layout_alignBottom="@+id/saveBtn"
+        android:layout_alignEnd="@+id/passwordEditText"
+        android:layout_marginEnd="12dp" />
+
+</RelativeLayout>

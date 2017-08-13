@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.charith.myarm.RemoteController">
+
+    <Button
+        android:id="@+id/forwardbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="62dp"
+        android:text="FORWARD" />
+
+    <Button
+        android:id="@+id/backwardbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/forwardbtn"
+        android:layout_marginEnd="34dp"
+        android:text="BACKWARD" />
+
+    <Button
+        android:id="@+id/upbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forwardbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="UP" />
+
+    <ToggleButton
+        android:id="@+id/stopbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/upbtn"
+        android:layout_centerVertical="true"
+        android:text="STOP"
+        android:textOff="RUN"
+        android:textOn="STOP" />
+
+    <Button
+        android:id="@+id/leftbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stopbtn"
+        android:layout_alignBottom="@+id/stopbtn"
+        android:layout_alignStart="@+id/forwardbtn"
+        android:text="LEFT" />
+
+    <Button
+        android:id="@+id/rightbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stopbtn"
+        android:layout_alignStart="@+id/backwardbtn"
+        android:text="RIGHT" />
+
+    <Button
+        android:id="@+id/downbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/stopbtn"
+        android:layout_below="@+id/stopbtn"
+        android:layout_marginTop="26dp"
+        android:text="DOWN" />
+
+    <Button
+        android:id="@+id/pickbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/leftbtn"
+        android:layout_below="@+id/downbtn"
+        android:layout_marginTop="31dp"
+        android:text="PICK" />
+
+    <Button
+        android:id="@+id/placebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pickbtn"
+        android:layout_alignBottom="@+id/pickbtn"
+        android:layout_alignStart="@+id/rightbtn"
+        android:text="PLACE" />
+</RelativeLayout>

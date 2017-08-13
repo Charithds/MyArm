@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyArm</string>
+    <string name="user_name">USER NAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="cancel">CANCEL</string>
+</resources>
